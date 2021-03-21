@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body
+{
+    min-width: 375px;
+    margin: 0 auto;
+}
+body {
+    background: rgb(208, 206, 233);
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+/* HEADER START */
+
+header {
+    
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 1% auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding-bottom: 10px;
+}
+
+header a {
+    transition: .2s linear;
+
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    
+}
+header a:hover {
+    
+    color: white;
+  
+}
+/* HEADER END */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    header {
+        flex-direction: column ;
+        align-items: center;
+    }
+    div.pic{
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    body {
+        font-size: 17px;
+    }
+    .container {
+        text-align: center;
+    }
+    .content {
+        margin: 5% auto;
+    }
+}
+
+/* CONTAINER START */
+
+.container {
+    
+    width: 100%;
+    max-width: 968px;  
+    margin: 5% auto;
+    
+    border-radius: 12px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+    font-size: .9em;
+}
+
+.pic {
+
+    height: 250px;
+    width: 250px;
+    
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border: 1px rgba(242,147,189,1) solid;
+    border-radius: 15px;
+    
+}
+
+.cont {
+    margin: 11% auto;
+}
+.cont a{
+    background: white;
+    border-radius: 12px;
+    border: 1px rgba(242,147,189,1) solid;
+
+    padding: 3%;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+
+    transition: all .2s;
+}
+.cont a:hover{
+    background:  rgba(106,164,232,0.8883928571428571);
+    border: 1px solid transparent;
+    color: white;
+}
